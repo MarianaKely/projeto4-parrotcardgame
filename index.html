@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon-96x96.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Parrot Card Game</title>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="nomination">PARROT CARD GAME</h1>
+      <div class="clock" data-test="timer">00</div>
+    </div>
+    
+    <li class="card" onclick="TurnCard(this)" data-test="card" >
+      <div class='front-face face'>
+          <img src='img/front.png' data-test="face-down-image">
+      </div>
+      <div class='back-face face'>
+          <img src='' data-test="face-up-image">
+      </div>
+    </li>  
+
+    <ul class="gameboard">  
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
