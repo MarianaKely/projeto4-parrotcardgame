@@ -44,7 +44,7 @@ body {
   height: 100%;
   background-color: #a7e9af;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +91,10 @@ img {
 
 .turned .front-face {
   transform: rotateY(-180deg);
+}
+
+.ToBeInactive{
+  display: none;
 }
 
 @media screen and (max-width: 335px) {
