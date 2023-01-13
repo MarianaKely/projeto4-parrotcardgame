@@ -27,7 +27,7 @@ function End(){
         alert(`Jogo Finalizado com ${PlayAttempts} jogas em ${TheTimer} segundos`);
         const OneMoreTime = confirm("Gostaria de jogar novamente?");
         if (OneMoreTime === true){
-            window.location.reload(); // recarregar a pagina
+            window.location.reload(); 
         }
     }
 }
