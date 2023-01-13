@@ -19,6 +19,18 @@ function TurnBackCards(){
      WrongCombination();
 }
 
+// player can choose to play one more time
+
+function End(){
+    if (Successful === DeckOfCards.length){
+        clearInterval( TimeInterval );
+        alert(`Jogo Finalizado com ${PlayAttempts} jogas em ${TheTimer} segundos`);
+        const OneMoreTime = confirm("Gostaria de jogar novamente?");
+        if (OneMoreTime === true){
+            window.location.reload(); // recarregar a pagina
+        }
+    }
+}
 
 // Flip cards with click and analyze if they match
 
@@ -124,6 +136,7 @@ function ChooseNumberOfCard(){
     TimeInterval = setInterval( clock, 1000);
 }
 ChooseNumberOfCard();
+
 
 
 
