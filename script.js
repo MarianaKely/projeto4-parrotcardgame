@@ -139,6 +139,13 @@ ChooseNumberOfCard();
 
 
 
+// makes the clock count
+
+function clock(){
+    TheTimer++;
+    const clock = document.querySelector('.clock');
+    clock.innerHTML = TheTimer;
+}
 
 
 
